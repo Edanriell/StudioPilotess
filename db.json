@@ -1,0 +1,111 @@
+{
+  "subscription": [
+    {
+      "fancy-text": "asdasda@assdasd",
+      "fancy-radio": "on",
+      "fancy-checkbox": "on",
+      "fancy-checkbox2": "on",
+      "id": 1
+    },
+    {
+      "CustomerName": "Name",
+      "CustomerSurname": "Surname",
+      "CustomerBirthDate-Month": "November",
+      "CustomerBirthDate-Day": "20",
+      "CustomerBirthDate-Year": "1996",
+      "CustomerContacts-Email": "Test@Test",
+      "Pro": "on",
+      "Politics": "on",
+      "Mailing": "on",
+      "id": 2
+    },
+    {
+      "CustomerName": "GG",
+      "CustomerSurname": "GGG",
+      "CustomerBirthDate-Month": "12",
+      "CustomerBirthDate-Day": "12",
+      "CustomerBirthDate-Year": "1212",
+      "CustomerContacts-Email": "asd@asd",
+      "Newbie": "on",
+      "id": 3
+    },
+    {
+      "CustomerName": "asda",
+      "CustomerSurname": "asd",
+      "CustomerBirthDate-Month": "asd",
+      "CustomerBirthDate-Day": "asd",
+      "CustomerBirthDate-Year": "asd",
+      "CustomerContacts-Email": "asdasdasdasd",
+      "Newbie": "on",
+      "Politics": "on",
+      "Mailing": "on",
+      "id": 4
+    },
+    {
+      "CustomerName": "asdasdaasda",
+      "CustomerSurname": "asdada",
+      "CustomerBirthDate-Month": "12",
+      "CustomerBirthDate-Day": "12",
+      "CustomerBirthDate-Year": "1999",
+      "CustomerContacts-Email": "asda@asda.lv",
+      "Newbie": "on",
+      "Politics": "on",
+      "Mailing": "on",
+      "select-radio": "on",
+      "id": 5
+    },
+    {
+      "CustomerName": "sdfs",
+      "CustomerSurname": "sdfs",
+      "CustomerBirthDate-Month": "11",
+      "CustomerBirthDate-Day": "11",
+      "CustomerBirthDate-Year": "1996",
+      "CustomerContacts-Email": "asd@asda.lv",
+      "Newbie": "on",
+      "Politics": "on",
+      "Mailing": "on",
+      "ProLevel": "on",
+      "MasterLevel": "on",
+      "id": 6
+    },
+    {
+      "CustomerName": "asd",
+      "CustomerSurname": "asd",
+      "CustomerBirthDate-Month": "11",
+      "CustomerBirthDate-Day": "11",
+      "CustomerBirthDate-Year": "1911",
+      "CustomerContacts-Email": "adasd@asssda.lv",
+      "Newbie": "on",
+      "Politics": "on",
+      "Mailing": "on",
+      "SkillLevel": "3",
+      "id": 7
+    },
+    {
+      "CustomerName": "asda",
+      "CustomerSurname": "asda",
+      "CustomerBirthDate-Month": "11",
+      "CustomerBirthDate-Day": "11",
+      "CustomerBirthDate-Year": "1990",
+      "CustomerContacts-Email": "asd@asd.lv",
+      "experience": "Experienced",
+      "Politics": "on",
+      "Mailing": "on",
+      "SkillLevel": "Newbie",
+      "id": 8
+    },
+    {
+      "CustomerName": "sra",
+      "CustomerSurname": "sdfs",
+      "CustomerBirthDate-Month": "11",
+      "CustomerBirthDate-Day": "11",
+      "CustomerBirthDate-Year": "1999",
+      "CustomerContacts-Email": "asdads@asd.lv",
+      "experience": "Experienced",
+      "Politics": "on",
+      "Mailing": "on",
+      "SkillLevel": "Master",
+      "id": 9
+    }
+  ]
+}

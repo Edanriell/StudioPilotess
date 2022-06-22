@@ -1,0 +1,103 @@
+$dark: #212121
+$dark-contrast: #424242
+$light: #fafafa
+$light-contrast: #cfd8dc
+$accent: #2196f3
+
+.StyledSelect 
+  display: flex
+  box-sizing: border-box
+  align-items: center
+  width: 100%
+  max-width: 140px
+  height: 40px
+  background-color: #91aa59
+  color: #fff
+  box-shadow: 0 2px 4px -1px rgba(#000, .25)
+  cursor: pointer
+  user-select: none
+  padding: 1.25rem 1.5rem
+  border-radius: 4px
+  transition: all 0.3s ease-in-out
+  font-size: 12px
+  text-shadow: 0 0 2px rgba(0,0,0,0.1)
+  text-align: center
+  text-transform: uppercase
+  letter-spacing: .05em
+  &-Input
+    z-index: -1
+  &:focus 
+    outline: 0
+  &:focus &-SelectList
+    opacity: 1
+    transform: translate(-50%, -50%) scale(1)
+    pointer-events: all
+  &:hover 
+    background-color: #748849
+  &:focus 
+    background-color: #748849
+    transition: 400ms ease
+  &::after 
+    content: ''
+    display: inline-block
+    margin-left: auto
+    border-left: .3755rem solid transparent
+    border-right: .3755rem solid transparent
+    border-top: .375rem solid #fff
+  &-SelectList
+    position: fixed
+    top: 92%
+    left: 66%
+    max-height: 256px
+    width: 160px
+    border-radius: 4px
+    background-color: #fafafa
+    color: #000
+    transform: translate(-50%, -50%) scale(0)
+    transition: all 400ms ease
+    opacity: 0
+    pointer-events: none
+    overflow: hidden
+    overflow-y: auto
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
+  &-InputLabel 
+    display: flex
+    align-items: center
+    padding: 1.25rem 1.5rem
+    cursor: pointer  
+    &:hover 
+      background-color: darken(#fafafa, 5%)
+    &:active 
+      background-color: darken(#fafafa, 10%)
+      transition: 400ms ease      
+  &-Radio
+    position: relative
+    width: 30px
+    height: 30px
+    border-radius: 100%
+    margin: 0
+    background: #ccc
+    appearance: none
+    cursor: pointer
+    margin-right: 10px
+    z-index: 9999
+    &:checked 
+      border: none
+      background-color: #91aa59
+      z-index: 99999
+      &::before 
+        display: block
+    &:focus 
+      outline: 0
+      z-index: 99999
+    &::before
+      content: ''
+      position: absolute
+      top: 50%
+      left: 50%
+      display: none
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      background-color: white
+      transform: translate(-50%, -50%)

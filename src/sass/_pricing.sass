@@ -1,0 +1,84 @@
+$lightSaladColor: #c8d4ac
+$saladGreenColor: #b2c38c
+$darkSaladColor: #9cb269
+$customerLevelTextColor: #fffeff
+$priceTextColor: #fffeff
+$indexColors: #ced8b5 1, #bbc996 2, #a7ba78 3 
+  
+@for $i from 1 through 3
+  .PriceList-Item
+    &:nth-child(#{$i})
+      > article::before
+        content: attr(data-index)
+        position: absolute
+        width: 12.760vw
+        height: 7.812vw
+        top: 2.347vw
+        left: 50%
+        transform: translateX(-50%)
+        z-index: 1
+        font-size: 10vw
+        font-family: "Montserrat-Black"
+        font-weight: 900
+        text-align: center
+        line-height: 10vw
+
+@each $color, $index in $indexColors
+  .PriceList-Item
+    &:nth-child(#{$index})
+      > article::before
+        color: $color
+
+.Pricing
+  padding-top: 9.895vw
+  &-Content
+    position: relative
+.PriceList
+  display: flex
+  align-items: center
+  padding-top: 3.229vw
+  &-Item
+    margin-right: 1.093vw
+    &:last-child
+      margin-right: 0
+.Product
+  width: 19.531vw
+  height: 27.604vw
+  border-radius: 10px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  box-sizing: border-box
+  padding-left: 3.541vw
+  padding-right: 3.541vw
+  position: relative
+  &_backgroundColor_lightSalad
+    background-color: $lightSaladColor
+  &_backgroundColor_salad
+    background-color: $saladGreenColor
+  &_backgroundColor_darkSalad
+    background-color: $darkSaladColor
+  &-CustomerLevel
+    color: $customerLevelTextColor
+    text-transform: uppercase
+    font-size: 1.458vw
+    font-family: "Montserrat-SemiBold"
+    font-weight: 600
+    display: flex
+    flex-direction: column
+    align-self: flex-start
+    letter-spacing: 2px
+    margin-bottom: 1.5625vw
+    z-index: 2
+    > span
+      font-size: 0.729vw
+      font-family: "Montserrat-Medium"
+      font-weight: 500
+      letter-spacing: normal
+  &-Price
+    color: $priceTextColor
+    font-size: 1.25vw
+    font-family: "Montserrat-SemiBold"
+    font-weight: 600
+    margin-bottom: 4.270vw
+    z-index: 2

@@ -1,0 +1,41 @@
+$sectionBackgroundColor: transparent
+$darkTextColor: #3c3c3c
+$lightTextColor: #9f9f9f
+
+.About
+  padding-bottom: 17.1875vw
+  background-color: $sectionBackgroundColor
+  &-Content
+    position: relative
+  &-ContentColumn
+    position: relative
+  &-DescriptionText
+    font-size: 0.84vw
+    line-height: 24px
+    &_color_darken
+      color: $darkTextColor
+      width: 17.70vw
+      margin-top: 3.541vw
+    &_color_lighten
+      margin-top: 1.927vw
+      width: 21.875vw
+      color: $lightTextColor
+      margin-bottom: 2.083vw
+  &-SectionImageWrapper
+    position: absolute
+    top: 8%
+    right: 0
+    &::before
+      content: ""
+      position: absolute
+      width: 6.979vw
+      height: 6.875vw
+      top: 10.416vw
+      left: 5.9375vw
+      z-index: -1
+      background: no-repeat url("../img/dots.png") center
+      background-size: 6.979vw 6.875vw
+  &-SectionImage
+    vertical-align: middle
+    width: 44.53125vw
+    height: 32.8125vw

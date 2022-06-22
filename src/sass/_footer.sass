@@ -1,0 +1,43 @@
+$footerBackgroundColor: #91aa59
+$copyrightTextColor: #ecf7e7
+$icons: "../img/vk.svg" 1 1.3020833333333335vw 0.7291666666666666vw, "../img/facebook.svg" 2 0.5208333333333333vw 1.0416666666666665vw, "../img/instagram.svg" 3 0.8854166666666666vw 0.8854166666666666vw
+
+@each $iconUrl, $itemIndex, $width, $height in $icons
+  .SocialLinksList
+    &-Item:nth-of-type(#{$itemIndex})
+      > a
+        background: no-repeat url($iconUrl) center
+        width: $width
+        height: $height
+
+.Footer
+  background: $footerBackgroundColor
+  margin-top: 6.614vw
+  padding-top: 1.406vw
+  padding-bottom: 2.5vw
+  &-Content 
+    display: flex
+    align-items: center
+  &-Copyright
+    color: $copyrightTextColor
+    font-size: 0.9375vw
+  &-LogotypeWrapper
+    margin: 0 auto
+  &-Logotype
+    width: 3.541vw
+    height: 2.708vw
+    vertical-align: middle
+.SocialLinksList
+  display: flex
+  align-items: center
+  &-Item
+    margin-right: 0.625vw
+    &:last-child
+      margin-right: 0
+  &-Link
+    display: block
+    width: 1.041vw
+    height: 1.041vw
+    transition: all 0.2s ease-in-out
+    &:hover
+      transform: scale(1.4)

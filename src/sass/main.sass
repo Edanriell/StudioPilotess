@@ -1,0 +1,150 @@
+@import "./fonts/montserrat"
+@import "header"
+@import "promo"
+@import "about"
+@import "pricing"
+@import "reviews"
+@import "footer"
+@import "modal"
+@import "notification"
+@import "form"
+@import "select"
+
+*
+  padding: 0
+  margin: 0
+html
+  font-size: 62.5%
+  scroll-behavior: smooth
+h1,h2,h3,h4,h5,h6
+  margin: 0
+ul,ol
+  list-style: none
+button,input
+  border: none
+  background-color: transparent
+a
+  color: inherit
+  text-decoration: none
+address
+  font-style: normal
+body
+  font-family: "Montserrat-Regular"
+  font-style: normal
+  font-weight: 400
+  font-size: 1.8rem
+  color: #404040
+  background-image: url("../img/bg.png")
+  background-repeat: no-repeat, no-repeat
+  background-position: top left
+  background-size: 100% 
+.VisuallyHidden
+  position: absolute
+  width: 1px
+  height: 1px
+  margin: -1px
+  border: 0
+  padding: 0
+  white-space: nowrap
+  clip-path: inset(100%)y
+  clip: rect(0 0 0 0)
+  overflow: hidden
+.Container
+  width: 60%
+  padding-left: 15px
+  padding-right: 15px
+  margin: 0 auto
+.Button
+  display: block
+  width: 13.02vw
+  height: 2.864vw
+  border: 2px solid #fffeff
+  border-radius: 30px
+  box-sizing: border-box
+  font-size: 0.677vw
+  text-align: center
+  color: #f9fdfc
+  line-height: 2.604vw
+  transition: all 0.2s ease-in-out
+  &:hover
+    background: #fff
+    color: #000
+    &::after
+      transition: all 0.2s ease-in-out
+      left: 14.9375vw
+  &::after
+    content: ""
+    position: absolute
+    top: 50%
+    left: 10.9375vw
+    transform: translateY(-50%) 
+    background: no-repeat url("../img/arrow.svg") center
+    width: 3.90625vw
+    height: 0.78125vw
+    background-size: 3.90625vw 0.78125vw
+    transition: all 0.2s ease-in-out
+  &_size_medium
+    width: 12.5vw
+    height: 2.864vw
+    font-family: "Montserrat-SemiBold"
+    font-weight: 600
+    font-size: 0.729vw
+    &:hover
+      background: #fff
+      color: #000
+      &::after
+        transition: all 0.2s ease-in-out
+        left: 11vw
+        background: no-repeat url("../img/arrowBlack.svg") center
+    &::after
+      left: 10.4375vw
+  &-Wrapper
+    position: relative
+.SectionHeader
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &-Text
+    font-family: "Montserrat-Medium"
+    font-weight: 500
+    font-size: 2.1875vw
+    display: flex
+    align-items: center
+    color: #404040
+    &::before
+      content: ""
+      background: #404040
+      width: 1.927vw
+      height: 0.104vw
+      margin-right: 20px
+  &_decorated_true
+    &::after
+      content: ""
+      width: 5.364vw
+      height: 6.875vw
+      background: no-repeat url("../img/dots-2.png") center
+      background-size: 5.364vw 6.875vw
+.Link
+  text-transform: uppercase
+  color: #2b4d35
+  font-family: "Montserrat-SemiBold"
+  font-weight: 600
+  font-size: 0.84vw
+  display: flex
+  align-items: center
+  transition: all 0.20s ease-in-out
+  &:hover
+    color: #91aa59
+  &::after
+    transition: all 0.20s ease-in-out
+    content: ""
+    width: 10px
+    height: 18px
+    background: no-repeat url("../img/chevronRight.svg") center
+    margin-left: 10px
+  &:hover::after
+    margin-left: 20px
+    background: no-repeat url("../img/chevronRightGreen.svg") center
+  &-Wrapper
+    position: relative

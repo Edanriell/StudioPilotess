@@ -1,0 +1,51 @@
+$sectionBackgroundColor: transparent
+$reviewBoxBackgroundColor: #FFF
+$reviewBoxShadow: rgba(149, 157, 165, 0.2) 0px 8px 24px
+
+.Reviews
+  padding-top: 11.458vw
+  background-color: $sectionBackgroundColor
+  &-Content
+    position: relative
+.ReviewsList
+  display: flex
+  margin-top: 6.145vw
+  &-Item
+    margin-right: 1.041vw
+    &:last-child
+      margin-right: 6.145vw
+.Review
+  display: flex
+  flex-direction: column
+  width: 19.531vw
+  height: 28.645vw
+  background: $reviewBoxBackgroundColor
+  box-shadow: $reviewBoxShadow
+  box-sizing: border-box
+  padding-left: 2.34375vw
+  padding-right: 2.34375vw
+  padding-top: 1.822vw
+  &-ReviewerProfilePictureWrapper
+    position: relative
+  &-ReviewerProfile
+    vertical-align: middle
+    border-radius: 100%
+    width: 7.8125vw
+    height: 7.8125vw
+  &-ReviewerQuoteWrapper
+    order: 3
+    margin-top: 1.041vw
+    font-family: "Montserrat-Medium"
+    font-weight: 500
+    line-height: 1.2vw
+  &-ReviewerQuote
+    font-size: 0.833vw
+  &-AboutReviewer
+    margin-top: 1.041vw
+  &-ReviewerName
+    font-size: 1.25vw
+    font-family: "Montserrat-Medium"
+    font-weight: 500
+  &-ReviewerAge
+    font-size: 0.833vw
+    margin-top: 1.041vw
